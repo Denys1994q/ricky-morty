@@ -1,13 +1,28 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import axios from '../../axios'
 
+export interface ICharObj {
+    id: number,
+    name: string,
+    status: string,
+    species: string,
+    type: string,
+    gender: string,
+    image: string,
+    origin: Object,
+    location: Object,
+    episode: [],
+    url: string,
+    created: string
+}
+
 const initialState = {
-    characters: <null | []>null,
-    charactersLoading: false,
-    charactersError: false,
-    currentCharacter: null,
-    currentCharacterLoading: false,
-    currentCharacterError: false
+    characters: <null | ICharObj[]>null,
+    charactersLoading: <boolean>false,
+    charactersError: <boolean>false,
+    currentCharacter: <ICharObj | null>null,
+    currentCharacterLoading: <boolean>false,
+    currentCharacterError: <boolean>false
 };
 
 export const fetchCharacters: any = createAsyncThunk("/fetchCharacters", async (name: string) => {

@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "../../pages/Home-page";
 import CharPage from "../../pages/Char-page";
 
-function App() {
+function App(): JSX.Element {
     return (
         <div className='mainContainer'>
             <Routes>

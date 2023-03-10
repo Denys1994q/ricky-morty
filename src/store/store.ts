@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 import charactersSlice from './slices/characters-slice'
+import authSlice from './slices/auth-slice'
 
 const store = configureStore({
     reducer: {
-        charactersSlice
+        charactersSlice,
+        authSlice
     },
     middleware: getDefaultMiddleware => getDefaultMiddleware(),
     devTools: process.env.NODE_ENV !== "production",

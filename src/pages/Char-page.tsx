@@ -9,7 +9,7 @@ import { ScaleLoader } from "react-spinners";
 import CharInfo from "../components/char-info/Char-info";
 import NavBtn from "../components/nav-btn/Nav-btn";
 
-const CharPage = () => {
+const CharPage = (): JSX.Element => {
     const dispatch = useAppDispatch();
     const { id } = useParams();
     const characterLoading = useAppSelector((state: any) => state.charactersSlice.currentCharacterLoading);

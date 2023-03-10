@@ -5,7 +5,6 @@ import { useAppDispatch } from "../../hooks/redux-types";
 
 import { fetchCharacters } from "../../store/slices/characters-slice";
 
-// при переході на роути дані стореджа теж мають зберігатися
 const SearchInput = (): JSX.Element => {
     const dispatch = useAppDispatch();
 
