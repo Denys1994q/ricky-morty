@@ -1,0 +1,21 @@
+.searchInput
+    position: relative
+    input
+        width: 100%
+        border: 1px solid rgba(0, 0, 0, 0.5)
+        font-size: 1.6rem
+        padding: 1.7rem
+        border-radius: .8rem
+        padding-left: 5rem
+        &::placeholder
+            color: rgba(0, 0, 0, 0.5)
+    &::before
+        position: absolute
+        top: 50%
+        left: 2rem
+        transform: translate(0, -50%)
+        content: ''
+        width: 1.75rem
+        height: 1.75rem
+        background: url('../../imgs/search_icon.svg')
+        display: block

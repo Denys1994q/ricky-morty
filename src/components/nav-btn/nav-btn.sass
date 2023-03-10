@@ -1,0 +1,26 @@
+.btnRoute
+    font-family: 'Karla'
+    font-style: normal
+    font-weight: 700
+    font-size: 1.8rem
+    line-height: 2.1rem
+    text-transform: uppercase
+    position: relative
+    display: inline-block
+    cursor: pointer
+    transition: all .2s ease-in-out
+    margin-bottom: 3.2rem
+    &:hover
+        color: #a00f0f
+    &-arrowBefore
+        padding-left: 2.8rem
+        &::before
+            content: ''
+            background: url('../../imgs/arrow_back.svg') no-repeat center
+            position: absolute
+            display: block
+            top: 50%
+            left: 0
+            transform: translate(0, -50%)
+            width: 1.6rem
+            height: 1.6rem
