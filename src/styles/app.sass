@@ -1,3 +1,6 @@
+@import './variables/variables.sass'
+@import './mixins/mixins.sass'
+
 *, ::after, ::before
     margin: 0
     padding: 0
@@ -14,12 +17,11 @@ html
     font-size: 62.5%
 
 body
-    background: #ffffff
-    color: #000000
+    background: $main-white
+    color: $main-black
     font-size: 1.4rem
     font-family: 'Roboto'
     font-weight: 400
-    padding: .5rem
 
 img
     max-width: 100%
@@ -58,5 +60,8 @@ ul
     list-style: none
 
 .mainContainer
-    max-width: 102rem
-    margin: 4rem auto
+    max-width: 106rem
+    margin: 0 auto
+    padding: 2rem
+    @include respond(tab-port)
+        padding: 2.4rem 

@@ -1,8 +1,8 @@
-import "./app.sass";
+import "../../styles/app.sass";
 
 import { Routes, Route } from "react-router-dom";
 
-import HomePage from "../../pages/Home-page";
+import HomePage from "../../pages/Chatacters-page";
 import CharPage from "../../pages/Char-page";
 
 function App(): JSX.Element {

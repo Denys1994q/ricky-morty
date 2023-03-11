@@ -1,3 +1,5 @@
+@import '../../styles/mixins/mixins.sass'
+
 .btnRoute
     font-family: 'Karla'
     font-style: normal
@@ -24,3 +26,5 @@
             transform: translate(0, -50%)
             width: 1.6rem
             height: 1.6rem
+            @include respond(phoneL)
+                top: 45%

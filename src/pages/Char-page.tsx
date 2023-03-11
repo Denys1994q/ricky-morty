@@ -31,7 +31,7 @@ const CharPage = (): JSX.Element => {
         <>
             {!characterError ? (
                 <>
-                    <div className='charPage__btnWrapper'>
+                    <div className='character__btnwrapper'>
                         <NavBtn path={"./"} text='go back' />
                     </div>
                     <CharInfo />
@@ -43,13 +43,13 @@ const CharPage = (): JSX.Element => {
     );
 
     return (
-        <>
+        <section className='character'>
             {characterLoading ? (
                 <ScaleLoader color={"#26a69a"} cssOverride={loaderStyles} loading={characterLoading} />
             ) : (
                 content
             )}
-        </>
+        </section>
     );
 };
 

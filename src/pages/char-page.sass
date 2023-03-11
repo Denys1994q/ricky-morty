@@ -1,4 +1,10 @@
-.charPage__btnWrapper
-    position: absolute
-    top: 2.3rem
-    left: 5rem
+@import '../styles/mixins/mixins.sass'
+
+.character
+    &__btnwrapper
+        position: absolute
+        top: 2.3rem
+        left: 5rem
+        @include respond(phoneL)
+            top: 2.7rem
+            left: 2.8rem

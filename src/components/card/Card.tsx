@@ -3,23 +3,25 @@ import "./card.sass";
 import { Link } from "react-router-dom";
 
 interface ICardProps {
-    name: string,
-    species: string,
-    image: string,
-    id: string
+    name: string;
+    species: string;
+    image: string;
+    id: string;
 }
 
 const Card = ({ name, species, image, id }: ICardProps): JSX.Element => {
     return (
-        <Link to={`/${id}`} className='link-card'>
-            <div className='card'>
+        <div className='card'>
+            <Link to={`/${id}`}>
                 <img src={image} className='card__img' alt='character_image' />
-                <div className='card__info'>
-                    <p className='card__title'>{name}</p>
-                    <p className='card__subtitle'>{species}</p>
-                </div>
+            </Link>
+            <div className='card__info'>
+                <Link to={`/${id}`} className='card__title'>
+                    {name}
+                </Link>
+                <p className='card__subtitle'>{species}</p>
             </div>
-        </Link>
+        </div>
     );
 };
 

@@ -1,4 +1,9 @@
+@import '../../styles/mixins/mixins.sass'
+
 .cardsBox
     display: flex
     flex-wrap: wrap
     gap: 2rem
+    margin-bottom: 12rem
+    @include respond(phoneL)
+        justify-content: center

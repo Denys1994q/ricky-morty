@@ -33,7 +33,7 @@ const CharInfo = () => {
                             </li>
                             <li className='infoBlock__item'>
                                 <p className='infoBlock__itemTitle'>Type</p>
-                                <p className='infoBlock__itemText'>{character.type}</p>
+                                <p className='infoBlock__itemText'>{character.type ? character.type : "Unknown"}</p>
                             </li>
                         </ul>
                     </div>
