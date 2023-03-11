@@ -13,7 +13,7 @@ const LoginPanel = () => {
 
     useEffect(() => {
         function start() {
-            gapi.client.init({
+            gapi.auth2.init({
                 clientId: process.env.REACT_APP_CLIENT_GOOGLE_KEY,
                 scope: " ",
             });
